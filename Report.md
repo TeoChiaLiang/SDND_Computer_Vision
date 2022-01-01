@@ -15,7 +15,9 @@ To run the project,
 5. Download the dataset from waymo's Google Cloud bucket using 
      * cd to project folder from from the bash terminal in docker
      * python download_process.py --data_dir data
-6. Downgrade pyparsing by using the follow command if there is any issue due to pyparsing
+6. Follow the instruction in the project starter README.md to run the different part of the project \
+   \
+  *** Downgrade pyparsing by using the follow command if there is any issue due to pyparsing (For dataset analysis)
      * pip install pyparsing==2.4.2 
 <br></br>
 
@@ -74,6 +76,8 @@ Loss/localization_loss: 0.3892 \
 Loss/regularization_loss: 0.5337 \
 Loss/total_loss: 1.233 \
 Learning_rate: 0.0 <br></br>
+
+All the different loss metrics behavior are expected. The losses are expected reduce to zero (or close to zero) as the traning progress. The training ends when the learning rate is reduced to zero.
 
 ##### Fig 7. Performance metrics Precision 
 
